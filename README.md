@@ -1,10 +1,6 @@
 # User Manual
 
-We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help them to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the
-[lab.js!] (https://lab.js.org)
-or as a task in
-[Open Lab!] (https://open-lab.online)
-. There are two ways to work with the MAD builder. One option is to open the template (JSON file) in the lab.js builder, which is free open-source software. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. The second option is to open the MAD builder in Open Lab, an online platform for deployment of experiments. To modify the task, you have to edit its parameters (see *Table 1*). In the following, we will describe three different application scenarios to show how the parameters can be customized to your needs.
+We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help them to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://lab.js.org) or as a task in [Open Lab](https://open-lab.online). There are two ways to work with the MAD builder. One option is to open the template (JSON file) in the lab.js builder, which is free open-source software. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. The second option is to open the MAD builder in Open Lab, an online platform for deployment of experiments. To modify the task, you have to edit its parameters (see *Table 1*). In the following, we will describe three different application scenarios to show how the parameters can be customized to your needs.
 
 Table 1. The parameters
 
