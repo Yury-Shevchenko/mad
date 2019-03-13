@@ -24,15 +24,15 @@ Figure 2: Apartment-hunting task
 ### Scenario 3: “The preferential choice with images”
 
 The flexibility of the MAD Builder arises from the capability to upload your own images and use them as options, cues or cue values. In this case, we consider the task in which we ask people to choose between two food products. The first cue is the amount of calories (numbers), the second is the price ($), and the third cue is the country of origin (images of flags). Since it is a preferential choice, we will not estimate how correct the answer is and will not give participants any feedback.
-In the lab.js experiment builder we need to upload images that will represent food products. Upload images on the screen component “MouseLab” and rename them to correspond to the values of the parameter *_ displayOptionsNames*.
+In the lab.js experiment builder we need to upload images that will represent food products. Upload images on the screen component “MouseLab” and rename them to correspond to the values of the parameter *_displayOptionsNames*.
 
-
+[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json "Movie task")
 
 Figure 3: Food preferences task
 
 ![The preference task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%203.png)
 
-Table 1. The parameters
+#### Table 1. Task parameters
 
 | Parameter name                       | Example                                         | Format                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------------------------|-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
