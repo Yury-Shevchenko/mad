@@ -1,0 +1,517 @@
+{
+  "components": {
+    "1": {
+      "id": "1",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "2"
+      ],
+      "parameters": {
+        "rows": [
+          [
+            {
+              "name": "_taskTitle",
+              "value": "Apartment-hunting task",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_numberOfTrials",
+              "value": "10",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_taskInstruction",
+              "value": "Choose the apartment",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_optionsNames",
+              "value": "Option1; Option2; Option3; Option4",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_displayOptionsNames",
+              "value": "Apartment 1; Apartment 2; Apartment 3; Apartment 4",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_cuesNames",
+              "value": "Size; Price; Location; Neighborhood; Shops",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_cuesValidity",
+              "value": "0.25; 0.25; 0.20; 0.15; 0.15",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_randomlyGenerateCues",
+              "value": "true",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_probabilityOfPositiveCue",
+              "value": "0.4",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_randomizeOrderOfTrials",
+              "value": "true",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_showFeedback",
+              "value": "true",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_timeForFeedback",
+              "value": "1000",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_startingPoints",
+              "value": "0",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_costOfLossTrial",
+              "value": "0",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_prizeOfWinTrial",
+              "value": "100",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_costOfOpenningOneCue",
+              "value": "5",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_numberOfOptions",
+              "value": "4",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_numberOfCues",
+              "value": "5",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_typeOfCues",
+              "value": "binary",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_informationSearchParadigm",
+              "value": "closed",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_cuesBoxesBehavior",
+              "value": "remainOpen",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_numberOfOpenCuesFromTheStart",
+              "value": "0",
+              "type": "number"
+            }
+          ],
+          [
+            {
+              "name": "_firstCuesToBeShownOnClick",
+              "value": "",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_orderOfOptions",
+              "value": "ordered",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_orderOfCues",
+              "value": "ordered",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_decoupleOptionNamesFromDisplayNames",
+              "value": "false",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_showPoints",
+              "value": "true",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_cueValuesForEachTrial",
+              "value": "undefined",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_imageNamePositive",
+              "value": "",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_imageNameNegative",
+              "value": "",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_showOptionsAsImages",
+              "value": "false",
+              "type": "string"
+            }
+          ],
+          [
+            {
+              "name": "_showCuesAsImages",
+              "value": "false",
+              "type": "string"
+            }
+          ]
+        ]
+      },
+      "responses": {
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "messageHandlers": {
+        "rows": [
+          [
+            {
+              "title": "",
+              "message": "",
+              "code": ""
+            }
+          ]
+        ]
+      },
+      "title": "MouseLab",
+      "_tab": "Files",
+      "files": {
+        "rows": []
+      },
+      "notes": "Scenario 2: The second application scenario includes more randomization and applies the Mouselab paradigm in which users have to click on the boxes to open cue information. This time, it's about choosing between four different apartments based on five different cues. The cue values are generated independently with a probability of 40% to be a positive one. The feedback and the number of points are also displayed to participants. The participants click on the boxes to open the information and this information remains open until the end of the trial. We also make the information search costly and charge a certain number of points for each opened box. The options and cues are kept in the same order across trials.\n"
+    },
+    "2": {
+      "id": "2",
+      "type": "lab.flow.Loop",
+      "children": [
+        "3"
+      ],
+      "parameters": {
+        "rows": [
+          [
+            {
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        ]
+      },
+      "templateParameters": {
+        "columns": [],
+        "rows": []
+      },
+      "responses": {
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "messageHandlers": {
+        "rows": [
+          [
+            {
+              "title": "createTrialParameters",
+              "message": "before:prepare",
+              "code": "let study = this;\r\nlet trialParameters = [];\r\n\r\n//helper functions\r\nfunction shuffle(array) {\r\n  var currentIndex = array.length, temporaryValue, randomIndex;\r\n  while (0 !== currentIndex) {\r\n    randomIndex = Math.floor(Math.random() * currentIndex);\r\n    currentIndex -= 1;\r\n    temporaryValue = array[currentIndex];\r\n    array[currentIndex] = array[randomIndex];\r\n    array[randomIndex] = temporaryValue;\r\n  }\r\n  return array;\r\n}\r\nfunction getAllIndexes(arr, val) {\r\n    var indexes = [], g;\r\n    for(g = 0; g < arr.length; g++){\r\n    \tif (arr[g] === val){\r\n    \t\tindexes.push(g);\r\n    \t}\r\n    }\r\n    return indexes;\r\n}\r\nfunction fillArray(value, len) {\r\n  var arr = [];\r\n  for (var i = 0; i < len; i++) {\r\n    arr.push(value);\r\n  }\r\n  return arr;\r\n}\r\n\r\n//function to create a task\r\nconst createTask = (numberTrials, instruction, optionsNames, displayOptionsNames, showOptionsAsImages, cuesNames, showCuesAsImages, cuesValidity, generateCues, probabilityPosCue, randomizeOrder, feedback, timeForFeedback, startBalance, loseCost, winCost, cueCost, optionsNum, cuesNum, cuesType, paradigm, cuesReaction, openCues, firstCueValues, whichOptionsOrder, whichCuesOrder, randomizeDisplayOptionsNames, showPoints, data) => {\r\n\r\n  let order;\r\n  if (randomizeOrder == \"random\"){\r\n    order = [];\r\n    for (var i = 1; i <= numberTrials; i++) {\r\n      order.push(i);\r\n    };\r\n    shuffle(order);\r\n  } else {\r\n    order = randomizeOrder;\r\n  };\r\n\r\n  let numberOfOpenCuesLines;\r\n  if (!(openCues)){\r\n\t\tnumberOfOpenCuesLines = 0;\r\n\t} else {\r\n    numberOfOpenCuesLines = openCues;\r\n  };\r\n\r\n  let firstCuesArray;\r\n\tif (firstCueValues != undefined){\r\n    firstCuesArray = shuffle(firstCueValues);\r\n\t}\r\n  \r\n  //randomize the order of options and cues\r\n  let optionsOrder = [];\r\n  for (var i = 1; i <= optionsNum; i++) {\r\n     \toptionsOrder.push(i);\r\n  };\r\n  if (whichOptionsOrder == \"random\"){\r\n    shuffle(optionsOrder);\r\n  } else if (whichOptionsOrder == \"ordered\"){\r\n    //do not do anything with the order\r\n  } else { }\r\n\t\r\n  let cuesOrder = [];\r\n    for (var i = 1; i <= cuesNum; i++) {\r\n     \tcuesOrder.push(i);\r\n    };\r\n\tif (whichCuesOrder == \"random\"){\r\n    \tshuffle(cuesOrder);\r\n  } else if (whichCuesOrder == \"ordered\") {\r\n    \t//do not do anything with the order\r\n  } else { };\r\n\r\n  return {\r\n    numberTrials: numberTrials,\r\n    instruction: instruction,\r\n    optionsNames: optionsNames, \r\n    displayOptionsNames: displayOptionsNames,\r\n    showOptionsAsImages: showOptionsAsImages,\r\n    cuesNames: cuesNames,\r\n    showCuesAsImages: showCuesAsImages,\r\n    cuesValidity: cuesValidity,\r\n    generateCues: generateCues,\r\n    probabilityPosCue: probabilityPosCue,\r\n    order: order,\r\n    feedback: feedback,\r\n    timeForFeedback: timeForFeedback,\r\n    startBalance: startBalance,\r\n\t  loseCost: loseCost,\r\n\t  winCost: winCost,\r\n\t  cueCost: cueCost,\r\n\t  optionsNum: optionsNum,\r\n\t  cuesNum: cuesNum,\r\n\t  cuesType: cuesType,\r\n\t  paradigm: paradigm,\r\n    cuesReaction: cuesReaction,\r\n\t  //record: record,\r\n\t  openCues: numberOfOpenCuesLines,\r\n    firstCuesArray: firstCuesArray,\r\n    optionsOrder: optionsOrder,\r\n    cuesOrder: cuesOrder,\r\n    whichCuesOrder: whichCuesOrder,\r\n    whichOptionsOrder: whichOptionsOrder,\r\n    randomizeDisplayOptionsNames: randomizeDisplayOptionsNames,\r\n    showPoints: showPoints,\r\n    data: data,\r\n  }\r\n}\r\n\r\n//create cue values: either by copying from uploaded text file or randomly generate cue value\r\nfunction defineCueValues(task, trialNumber, optionNumber, cuesOrder){\r\n  if(task.generateCues){\r\n    var cueVal = new Array(task.cuesNum);\r\n\t\tfor (var i = 0; i < cueVal.length; i++){\r\n\t\t\tvar randomNumber = Math.round((Math.random()*100))/100;\r\n\t\t\tif (randomNumber < task.probabilityPosCue){\r\n\t\t\t\trandomNumber = 1;\r\n\t\t\t} else {\r\n\t\t\t\trandomNumber = 0;\r\n\t\t\t}\r\n\t\t\tcueVal[i] = randomNumber;\r\n\t\t}\r\n\t\treturn shuffle(cueVal);\r\n  } else {\r\n    if (typeof(task.data) != \"undefined\") {\r\n      let dataTrialCues = task.data[trialNumber - 1];\r\n      let dataTrialOptionCues = dataTrialCues[optionNumber - 1];\r\n      let dispayDataTrialOptionCues = [];\r\n      for (let t = 0; t < cuesOrder.length; t++){\r\n        let index = cuesOrder[t];\r\n        dispayDataTrialOptionCues.push(dataTrialOptionCues[index-1]);\r\n      };\r\n      return(dispayDataTrialOptionCues);\r\n    } \r\n  }\r\n}\r\n\r\n//function to create a trial for the task\r\nconst createTrial = (task, trialNumber) => {\r\n  let firstCueValue;\r\n  if (task.firstCuesArray != undefined){\r\n\t  firstCueValue = task.firstCuesArray[trialNumber - 1];\r\n\t}\r\n  //order of options\r\n  let optionsOrder;\r\n  if (task.whichOptionsOrder == \"random\"){\r\n    optionsOrder = [];\r\n    for (var i = 1; i <= optionsNum; i++) {\r\n    \toptionsOrder.push(i);\r\n    };\r\n    shuffle(optionsOrder);\r\n  } else {\r\n   \toptionsOrder = task.optionsOrder;\r\n  }\r\n\r\n  //order of cues\r\n  let cuesOrder;\r\n  if (task.whichCuesOrder == \"random\"){\r\n   \tlet trialCuesOrder = [];\r\n   \tfor (var i = 1; i <= cuesNum; i++) {\r\n    \ttrialCuesOrder.push(i);\r\n    };\r\n    shuffle(trialCuesOrder);\r\n    cuesOrder = trialCuesOrder;\r\n  } else {\r\n   \tcuesOrder = task.cuesOrder;\r\n  }\r\n\r\n  let displayCuesNames = [];\r\n  for (let t = 0; t < cuesOrder.length; t++){\r\n    var index = cuesOrder[t];\r\n    displayCuesNames.push(task.cuesNames[index-1]);\r\n  }\r\n \r\n  let options = [];\r\n  let displayNamesInTrial;\r\n  if(task.displayOptionsNames[0] && typeof(task.displayOptionsNames[0]) == \"object\"){\r\n    displayNamesInTrial = task.displayOptionsNames[trialNumber - 1];\r\n  } else {\r\n    displayNamesInTrial = task.displayOptionsNames;\r\n  }\r\n  \r\n  for (var i = 1; i <= task.optionsNum; i++) {\r\n    let newOption = {\r\n      optionNumber: i, \r\n      optionName: task.optionsNames[i-1], \r\n      displayName: displayNamesInTrial[i-1], \r\n      cueValues: defineCueValues(task, trialNumber, i, cuesOrder)\r\n      };\r\n    options.push(newOption);\r\n  }\r\n  let displayOptions = [];\r\n  for (let t = 0; t < options.length; t++){\r\n    var index = optionsOrder[t];\r\n    displayOptions.push(options[index-1]);\r\n  }\r\n  //randomize\r\n  if(task.randomizeDisplayOptionsNames){\r\n    let shuffledDisplayNames = displayOptions.map(e => e.displayName);\r\n    shuffle(shuffledDisplayNames);\r\n    for (let t = 0; t < displayOptions.length; t++){\r\n      displayOptions[t].displayName = shuffledDisplayNames[t];\r\n    }\r\n  }\r\n  //select correct option\r\n  let correctOption;\r\n  let valueOptions = [];\r\n\tfor (var i = 0; i < displayOptions.length; i++){\r\n    let displayCuesValidity = [];\r\n    for (let t = 0; t < cuesOrder.length; t++){\r\n      let ind = cuesOrder[t];\r\n      displayCuesValidity.push(task.cuesValidity[ind-1]);\r\n    };\r\n\t\tlet valueOption = 0;\r\n\t\tfor (let z = 0; z < task.cuesNum; z++){\r\n\t\t\tlet valueOnOneCue = displayCuesValidity[z] * displayOptions[i].cueValues[z];\r\n\t\t\tvalueOption = valueOption + valueOnOneCue;\r\n\t\t}\r\n\t\tvalueOptions[i] = Math.round(valueOption * 100)/100;\r\n\t\t//to show option value\r\n\t\tdisplayOptions[i].optionValue = Math.round(valueOption * 100)/100;\r\n\t}\r\n\t//to find the maximum\r\n\tlet max = Math.max.apply(Math, valueOptions);\r\n\tlet indexMax = getAllIndexes(valueOptions, max);\r\n\tif (indexMax.length > 1){\r\n\t\tindexMax = indexMax[Math.floor(Math.random() * indexMax.length)];\r\n\t} else {\r\n\t\tindexMax = indexMax[0];\r\n\t}\r\n  let displayOptionsNames = displayOptions.map(e => e.displayName);\r\n\tcorrectOption = displayOptionsNames[indexMax];\r\n\r\n  return {\r\n    trialNumber: trialNumber,\r\n    cuesNum: task.cuesNum,\r\n    optionsNum: task.optionsNum, \r\n    displayOptions: displayOptions,\r\n    showOptionsAsImages: task.showOptionsAsImages,\r\n    showCuesAsImages: task.showCuesAsImages,\r\n    correctOption: correctOption,\r\n    cuesOrder: cuesOrder,\r\n    displayCuesNames: displayCuesNames,\r\n    openCues: task.openCues,\r\n    cuesType: task.cuesType,\r\n    paradigm: task.paradigm,\r\n    cueCost: task.cueCost,\r\n    firstCueValue: firstCueValue,\r\n    cuesReaction: task.cuesReaction,\r\n    feedback: task.feedback,\r\n    timeForFeedback: task.timeForFeedback,\r\n    winCost: task.winCost,\r\n    loseCost: task.loseCost,\r\n    instruction: task.instruction,\r\n    calculatedValuesOfOptions: valueOptions,\r\n    theValueOfWinOption: max,\r\n    positionOfWinOption: indexMax,\r\n    startBalance: task.startBalance,\r\n    showPoints: task.showPoints,\r\n  }\r\n}\r\n\r\nconst upload = (items) => {\r\n  if(items){\r\n    if(items != 'undefined'){\r\n      const array = items.split(';').map(function(item){\r\n        return item.trim();\r\n        });\r\n      return (array);\r\n    }\r\n  }\r\n};\r\n\r\nconst uploadFloat = (items) => {\r\n  if (items){\r\n    const array = items.split(';').map(function(item){\r\n      return parseFloat(item.trim());\r\n    });\r\n    return (array);\r\n  }\r\n};\r\n\r\nconst uploadData = (data) => {\r\n  if(data){\r\n    const trialsArray = data.split(/\\s+/);\r\n    const res = trialsArray.map( (trials) => {\r\n      let trial = trials.split(';').map( (t) => {\r\n        return t.trim();\r\n      });\r\n      let options = trial.reduce((memo, value, index) => {\r\n        if(index % study.parameters._numberOfCues == 0 && index !== 0) memo.push([]);\r\n        memo[memo.length - 1].push(value)\r\n        return memo\r\n      },[[]]);\r\n      return (options);\r\n    })\r\n    return (res);\r\n  }\r\n}\r\n\r\nconst uploadNames = (names) => {\r\n  if(names){\r\n    if (names.includes(\"$\")){\r\n      const trialsArray = names.split(/\\$+/);\r\n      const res = trialsArray.map( (trials) => {\r\n        let trial = trials.split(';').map( (t) => {\r\n          return t.trim();\r\n        });\r\n        return (trial);\r\n      })\r\n      console.log(res);\r\n      return (res);\r\n    } else {\r\n      return (upload(names));\r\n    }\r\n  }\r\n}\r\n\r\n//initialize the task\r\nconst task = createTask(\r\n  numberTrials = parseInt(study.parameters._numberOfTrials), \r\n  instruction = study.parameters._taskInstruction,\r\n  optionsNames = upload(study.parameters._optionsNames),\r\n  displayOptionsNames = uploadNames(study.parameters._displayOptionsNames),\r\n  showOptionsAsImages = study.parameters._showOptionsAsImages == 'true',\r\n  cuesNames = upload(study.parameters._cuesNames),\r\n  showCuesAsImages = study.parameters._showCuesAsImages == 'true',\r\n\tcuesValidity = uploadFloat(study.parameters._cuesValidity),\r\n\tgenerateCues = study.parameters._randomlyGenerateCues == 'true',\r\n\tprobabilityPosCue = parseFloat(study.parameters._probabilityOfPositiveCue), \r\n\trandomizeOrder = study.parameters._randomizeOrderOfTrials == 'true',  \r\n  feedback = study.parameters._showFeedback == 'true',  \r\n  timeForFeedback = parseFloat(study.parameters._timeForFeedback), \r\n\tstartBalance = parseFloat(study.parameters._startingPoints),\r\n  loseCost = parseFloat(study.parameters._costOfLossTrial), \r\n  winCost = parseFloat(study.parameters._prizeOfWinTrial), \r\n  cueCost = parseFloat(study.parameters._costOfOpenningOneCue),\r\n  optionsNum = parseInt(study.parameters._numberOfOptions), \r\n  cuesNum = parseInt(study.parameters._numberOfCues), \r\n  cuesType = study.parameters._typeOfCues,//'binary','raw','images','names'\r\n  paradigm = study.parameters._informationSearchParadigm,//'open','closed', \r\n  cuesReaction = study.parameters._cuesBoxesBehavior, //'remainOpen','closeAfterNextClick'\r\n  openCues = parseInt(study.parameters._numberOfOpenCuesFromTheStart),\r\n\tfirstCueValues = upload(study.parameters._firstCuesToBeShownOnClick),\r\n  whichOptionsOrder = study.parameters._orderOfOptions, //'ordered','random'\r\n  whichCuesOrder = study.parameters._orderOfCues, //'ordered','random'\r\n  randomizeDisplayOptionsNames = study.parameters._decoupleOptionNamesFromDisplayNames == 'true',\r\n  showPoints = study.parameters._showPoints == 'true', \r\n  data = uploadData(study.parameters._cueValuesForEachTrial) || undefined,\r\n);\r\n\r\n//trials constructor\r\nfor (i = 1; i <= parseInt(study.parameters._numberOfTrials); i++){\r\n  trialParameters = trialParameters.concat(createTrial(task, i));\r\n}\r\n\r\nthis.options.templateParameters = trialParameters;\r\nif(study.parameters._randomizeOrderOfTrials == \"true\"){\r\n  this.options.shuffle = true;\r\n} else {\r\n  this.options.shuffle = false;\r\n};"
+            }
+          ]
+        ]
+      },
+      "shuffle": false,
+      "title": "Loop",
+      "_tab": "Scripts",
+      "files": {
+        "rows": []
+      }
+    },
+    "3": {
+      "id": "3",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "6"
+      ],
+      "parameters": {
+        "rows": [
+          [
+            {
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        ]
+      },
+      "responses": {
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "messageHandlers": {
+        "rows": [
+          [
+            {
+              "title": "",
+              "message": "",
+              "code": ""
+            }
+          ]
+        ]
+      },
+      "title": "Sequence",
+      "files": {
+        "rows": []
+      }
+    },
+    "4": {
+      "id": "4",
+      "type": "lab.html.Screen",
+      "parameters": {
+        "rows": [
+          [
+            {
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        ]
+      },
+      "responses": {
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "messageHandlers": {
+        "rows": [
+          [
+            {
+              "title": "",
+              "message": "",
+              "code": ""
+            }
+          ]
+        ]
+      },
+      "title": "End",
+      "content": "<main>\r\n  Thank you for participation!\r\n</main>",
+      "_tab": "Content",
+      "timeout": "1000",
+      "files": {
+        "rows": []
+      }
+    },
+    "6": {
+      "id": "6",
+      "type": "lab.html.Screen",
+      "responses": {
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "messageHandlers": {
+        "rows": [
+          [
+            {
+              "title": "scripts",
+              "message": "run",
+              "code": "let study = this;\r\n\r\n//FUNCTIONS\r\n//prepares the current trial\r\nconst prepareTrial = (trial) => {\r\n\tcreateInstructionsHeader(trial);\r\n  createTable(trial);\r\n};\r\n\r\n//calculates the points after the choice\r\nconst calculatePoints = (trial, answer) => {\r\n\tif (answer == String(trial.correctOption)){\r\n\t\tpoints = points + trial.winCost;\r\n\t} else {\r\n\t\tpoints = points - trial.loseCost;\r\n\t}\r\n\tif (trial.feedback == true && trial.showPoints == true){\r\n    document.getElementById(\"points\").innerHTML = \"Points: \" + points;\r\n  }\r\n};\r\n\r\n//saves the trial data\r\nconst saveTrialData = (trial, answer, answerOption) => {\r\n\tstudy.data.currentTrial = currentTrial;\r\n\tstudy.data.trialTime = Math.round(timeOptionPressed - timeBeginTrial);\r\n\tstudy.data.answer = answer;\r\n\tstudy.data.answerOption = answerOption;\r\n\tstudy.data.points = points;\r\n\tif(trial.paradigm == \"closed\"){\r\n\t\tstudy.data.infoCost = infoCost;\r\n\t\tstudy.data.cuesHistory = cuesHistory;\r\n\t\tstudy.data.cuesValuesHistory = cuesValuesHistory;\r\n\t\tstudy.data.boxHistory = boxHistory;\r\n\t\tstudy.data.timeCueHistory = timeCueHistory;\r\n\t\tstudy.data.numberOfOpenedCues = boxHistory.length;\r\n\t\tconst payne = (switchBaseHistory.filter(e => e == \"option\").length - switchBaseHistory.filter(e => e == \"cue\").length) / switchBaseHistory.filter(e => e == \"option\" || e == \"cue\").length;\r\n\t\tstudy.data.payneIndex = Math.round(payne * 100)/100;\r\n\t};\r\n}\r\n\r\n//shows feedback after the choice\r\nconst showFeedback = (trial, answer) => {\r\n\tvar feedback = document.getElementById(\"feedback\");\r\n\tfeedback.style.visibility = \"visible\";\r\n\tif (answer == String(trial.correctOption)){\r\n\t\tfeedback.innerHTML = \"Correct\";\r\n\t\tfeedback.style.color = \"green\";\r\n\t} else {\r\n\t\tfeedback.innerHTML = \"Wrong\";\r\n\t\tfeedback.style.color = \"red\";\r\n\t}\r\n\tsetTimeout(() => { feedback.style.visibility = \"hidden\"; }, parseInt(thisTrial.timeForFeedback));\r\n}\r\n\r\n//shows the instructions above the task\r\nconst createInstructionsHeader = (trial) => {\r\n\tdocument.getElementById(\"instruction\").innerHTML = trial.instruction;\r\n\tdocument.getElementById(\"trialNumber\").innerHTML = \"The trial number is \" + currentTrial;\r\n\tif (trial.feedback == true && trial.showPoints == true){\r\n    document.getElementById(\"points\").innerHTML = \"Points: \" + points;\r\n  }\r\n}\r\n\r\n//reacts to the choice (click on a button)\r\nconst listenToDecision = () => {\r\n\tlet decisonButtons = document.querySelectorAll(\".OptionsHeadings\");\r\n\tdecisonButtons.forEach( button => button.onclick = function(event){\r\n\t\tif (thisTrial.paradigm == \"closed\" && cellId != undefined){\r\n      if (thisTrial.cuesReaction == \"remainOpen\" || thisTrial.cuesReaction == \"closeAfterNextClick\"){\r\n          cueLeft();\r\n      }\r\n    }\r\n\t\t//debugger;\r\n\t\tconst answer = event.target.textContent || event.target.childNodes[0].alt;\r\n  \ttimeOptionPressed = performance.now();\r\n\t\tlet btns = document.querySelectorAll('button');\r\n\t\tbtns.forEach(btn => {\r\n\t\t\tbtn.disabled = true;\r\n\t\t});\r\n\t\tcalculatePoints(thisTrial, answer);\r\n\t\tif (thisTrial.feedback == true){\r\n   \t\tshowFeedback(thisTrial, answer);\r\n   \t};\r\n   \tsaveTrialData(thisTrial, answer, event.target.id);\r\n\t\t//switches to the next trial after the feedback\r\n\t\tsetTimeout(() => { study.respond(); }, parseInt(thisTrial.timeForFeedback));\r\n\t});\r\n};\r\n\r\n//reacts to mouse clicks on the cue values\r\nconst closeCues = (trial) => {\r\n\tlet closedCells = document.querySelectorAll(\".CellHolderClosed\");\r\n\tclosedCells.forEach(cell => cell.onclick = function(){\r\n    if (this.id == cellId){\r\n      console.log(\"The same cell is clicked\")\r\n    } else {\r\n      if (firstClick){\r\n        //show the first cue differently\r\n\t\t\t\tif (trial.firstCueValue != undefined){\r\n\t\t\t\t\tthis.childNodes[0].innerText = trial.firstCueValue;\r\n\t\t\t\t}\r\n        cueEntered(trial, this);\r\n        firstClick = false;\r\n      } else {\r\n        if (trial.cuesReaction == \"remainOpen\"){\r\n      \t  cueLeft();\r\n        }\r\n        if (trial.cuesReaction == \"closeAfterNextClick\"){\r\n          cueLeft();\r\n\t\t\t\t\tlet cells = document.querySelectorAll(\".Cell\");\r\n\t\t\t\t\tcells.forEach(cell => {\r\n\t\t\t\t\t\tcell.style.visibility = \"hidden\";\r\n\t\t\t\t\t})\r\n        }\r\n        cueEntered(trial, this);\r\n      }\r\n\t\t\tthis.querySelector('.Cell').style.visibility = \"visible\";\r\n    }\r\n\t});\r\n\t//closes the box if the mouse is left (if cuesReaction == \"closeAfterBoxIsLeft\")\r\n\tclosedCells.forEach(cell => cell.onmouseleave = function(){\r\n\t\tif (trial.cuesReaction == \"closeAfterBoxIsLeft\"){\r\n      cueLeft();\r\n      this.querySelector(\".Cell\").style.visibility = \"hidden\";\r\n\t\t\tcellId = undefined;\r\n    }\r\n\t})\r\n}\r\n\r\n//records the clicked box with the cue value\r\nconst cueEntered = (trial, cue) => {\r\n\t\r\n\tif (cuesHistory && cuesHistory.length > 0){\r\n\t\tconst last = cuesHistory[cuesHistory.length - 1].split(';');\r\n\t\tconst now = cue.childNodes[0].id.split(';');\r\n\t\tlet switchBase;\r\n\t\tif(last[0] == now[0]){\r\n\t\t\tswitchBase = \"option\";\r\n\t\t} else if (last[1] == now[1]){\r\n\t\t\tswitchBase = \"cue\";\r\n\t\t} else {\r\n\t\t\tswitchBase = \"none\";\r\n\t\t}\r\n\t\tswitchBaseHistory.push(switchBase);\r\n\t}\r\n\r\n  cellId = cue.id;\r\n  timeStartLookAtCue = performance.now();\r\n  boxHistory.push(cue.id);\r\n  cuesHistory.push(cue.childNodes[0].id);\r\n  cuesValuesHistory.push(cue.childNodes[0].textContent || cue.childNodes[0].childNodes[0].alt);\r\n  infoCost = infoCost + trial.cueCost;\r\n\tif (trial.cueCost != 0){\r\n    document.getElementById(\"infoCost\").innerHTML = \"Information costs: \" + infoCost;\r\n\t\tpoints = points - trial.cueCost;\r\n\t\tif (trial.feedback == true){\r\n\t\t\tdocument.getElementById(\"points\").innerHTML = \"Points: \" + points;\r\n\t\t}\r\n  }\r\n}\r\n\r\n//records the moment with the cue is left\r\nconst cueLeft = () => {\r\n  timeStopLookAtCue = performance.now();\r\n  timeLookingAtCue = Math.round(timeStopLookAtCue - timeStartLookAtCue);\r\n  timeCueHistory.push(timeLookingAtCue);//save time at a cue\r\n}\r\n\r\n//creates the tables with options and cues\r\nconst createTable = (trial) => {\r\n  var body = document.body;\r\n  tbl  = document.createElement('table');\r\n  tbl.style.width  = '200px';\r\n  tbl.style.height  = '100px';\r\n  tbl.style.border = '1px solid black';\r\n  var counter = 1;\r\n  for(var i = 0; i <= trial.cuesNum; i++){\r\n    var tr = tbl.insertRow();\r\n    for(var j = 0; j <= trial.optionsNum; j++){\r\n      var td = tr.insertCell();\r\n      if (i == 0 & j != 0) {\r\n        var node = document.createElement(\"BUTTON\");        \r\n\t\t\t\tif (trial.showOptionsAsImages){\r\n\t\t\t\t\tvar img = document.createElement(\"img\");\r\n\t\t\t\t\tvar imageName = trial.displayOptions[j-1].displayName;\r\n\t\t\t\t\timg.src = study.options.files[imageName];\r\n\t\t\t\t\timg.alt = trial.displayOptions[j-1].displayName;\r\n\t\t\t\t\tnode.style.height = `${150}px`;\r\n\t\t\t\t\tnode.appendChild(img);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tnode.innerHTML = trial.displayOptions[j-1].displayName;\r\n\t\t\t\t}\r\n        node.id = trial.displayOptions[j-1].optionName;\r\n        node.className = \"OptionsHeadings\";\r\n        td.appendChild(node);\r\n      } else if (i != 0 & j == 0) {\r\n      \tvar node2 = document.createElement(\"div\");\r\n\r\n\t\t\t\tif (trial.showCuesAsImages){\r\n\t\t\t\t\tvar img = document.createElement(\"img\");\r\n\t\t\t\t\tvar imageName = trial.displayCuesNames[i-1];\r\n\t\t\t\t\timg.src = study.options.files[imageName];\r\n\t\t\t\t\timg.alt = trial.displayCuesNames[i-1];\r\n\t\t\t\t\t//node.style.height = `${150}px`;\r\n\t\t\t\t\tnode2.appendChild(img);\r\n\t\t\t\t} else {\r\n\t\t\t\t\tnode2.innerHTML = trial.displayCuesNames[i-1];\r\n\t\t\t\t}\r\n      \r\n        node2.id = trial.displayCuesNames[i-1];\r\n        node2.className = \"CuesHeadings\";\r\n        td.appendChild(node2);\r\n      } else if (i != 0 & j != 0){\r\n      \tvar node3 = document.createElement(\"div\");\r\n        node3.id = counter;\r\n        //to check whether to keep some cells opened or closed\r\n        if(i > trial.openCues) {\r\n        \tnode3.className = \"CellHolderClosed\";\r\n        } else {\r\n        \tnode3.className = \"CellHolderOpened\";\r\n        }\r\n        var node4 = document.createElement(\"div\");\r\n        node4.id = trial.displayOptions[j-1].optionName + \"-\" + trial.displayOptions[j-1].displayName + \";\" + trial.displayCuesNames[i-1];\r\n     \t\tnode4.className = \"Cell\";\r\n        if (trial.cuesType == \"binary\") {\r\n        \tnode4.innerHTML = trial.displayOptions[j-1].cueValues[i-1] > 0 ? \"+\" : \"-\";\r\n        } else if (trial.cuesType == \"raw\"){\r\n        \tnode4.innerHTML = trial.displayOptions[j-1].cueValues[i-1];\r\n        } else if (trial.cuesType == \"image\"){\r\n\t\t\t\t\tvar img = document.createElement(\"img\");\r\n\t\t\t\t\tvar imageName = trial.displayOptions[j-1].cueValues[i-1] > 0 ? study.parameters._imageNamePositive : study.parameters._imageNameNegative;\r\n\t\t\t\t\timg.src = study.options.files[imageName];\r\n\t\t\t\t\timg.alt = trial.displayOptions[j-1].cueValues[i-1];\r\n\t\t\t\t\timg.width = \"50\";\r\n\t\t\t\t\tnode4.appendChild(img);\r\n        } else if(trial.cuesType == \"name\"){\r\n\t\t\t\t\tvar img = document.createElement(\"img\");\r\n\t\t\t\t\tvar imageName = trial.displayOptions[j-1].cueValues[i-1];\r\n\t\t\t\t\timg.src = study.options.files[imageName];\r\n\t\t\t\t\timg.alt = trial.displayOptions[j-1].cueValues[i-1];\r\n\t\t\t\t\timg.width = \"50\";\r\n\t\t\t\t\tnode4.appendChild(img);\r\n\t\t\t\t} else {\r\n\t\t\t\t\t//may be customized later\r\n\t\t\t\t}\r\n        if (trial.paradigm == \"closed\"){\r\n        \tif(i > trial.openCues) {\r\n        \t\tnode4.style.visibility = \"hidden\";\r\n        \t}\r\n        } else {\r\n        \tnode4.style.visibility = \"visible\";\r\n        }\r\n        node3.appendChild(node4);\r\n        td.appendChild(node3);\r\n        counter++;\r\n      }\r\n      td.style.border = '1px solid black';\r\n      }\r\n    }\r\n    body.appendChild(tbl);\r\n\r\n    if (trial.paradigm == \"closed\"){\r\n\t\t\tif (trial.cueCost != 0){\r\n\t\t\t\tdocument.getElementById(\"infoCost\").innerHTML = \"Information costs: \" + infoCost;\r\n\t\t\t}\r\n\t\t\tcloseCues(trial);\r\n    } else {\r\n      //may be customized for other types of paradigms (e.g., open)\r\n    }\r\n\t//enable buttons\r\n\tlistenToDecision();\r\n\tlet btns = document.querySelectorAll('button');\r\n\tbtns.forEach(btn => {\r\n\t\tbtn.removeAttribute(\"disabled\");\r\n\t});\r\n\t//add table to div\r\n  document.querySelector('#tableTask').append(tbl);\r\n\t//start measuring the time\r\n\ttimeBeginTrial = performance.now();\r\n};\r\n\r\n//initialize the current trial\r\nconst thisTrial = {\r\n\ttrialNumber: study.parameters.trialNumber,\r\n\tcuesNum: study.parameters.cuesNum,\r\n\toptionsNum: study.parameters.optionsNum, \r\n\tdisplayOptions: study.parameters.displayOptions,\r\n\tshowOptionsAsImages: study.parameters.showOptionsAsImages,\r\n\tshowCuesAsImages: study.parameters.showCuesAsImages,\r\n\tcorrectOption: study.parameters.correctOption,\r\n\tcuesOrder: study.parameters.cuesOrder,\r\n\tdisplayCuesNames: study.parameters.displayCuesNames,\r\n\topenCues: study.parameters.openCues,\r\n\tcuesType: study.parameters.cuesType,//could be 'binary',raw'\r\n\tparadigm: study.parameters.paradigm,\r\n\tcueCost: study.parameters.cueCost,\r\n\tfirstCueValue: study.parameters.firstCueValue,\r\n\tcuesReaction: study.parameters.cuesReaction,\r\n\tfeedback: study.parameters.feedback,\r\n\ttimeForFeedback: study.parameters.timeForFeedback,\r\n\twinCost: study.parameters.winCost,\r\n\tloseCost: study.parameters.loseCost,\r\n\tinstruction: study.parameters.instruction,\r\n\tstartBalance: study.parameters.startBalance,\r\n\tshowPoints: study.parameters.showPoints,\r\n};\r\n\r\n//initialize variables\r\nlet cuesHistory = [];\r\nlet cuesValuesHistory = [];\r\nlet boxHistory = [];\r\nlet timeCueHistory = [];\r\nlet switchBaseHistory = [];\r\nlet firstClick = true;\r\nlet cellId = undefined;//clean up the id of the last pressed cue\r\nlet infoCost = 0;\r\nlet timeBeginTrial;\r\nlet timeOptionPressed;\r\nlet points = study.state.points || study.parameters.startBalance || 0;\r\nlet currentTrial = study.state.currentTrial + 1 || 1;\r\n\r\n//prepares the trial\r\nprepareTrial(thisTrial);"
+            }
+          ]
+        ]
+      },
+      "title": "MouseLab",
+      "content": "<main>\r\n<div id = \"task\">\r\n\t<p><h3>${parameters._taskTitle}</h3></p>\r\n\t<div id=\"instruction\"></div><br>\r\n\t<div id=\"trialNumber\"></div>\r\n\t<div id=\"feedback\" style=\"visibility:hidden\"> _ </div>\r\n\t<div id=\"points\"> </div>\r\n\t<div id=\"infoCost\"> </div>\r\n\t<div id=\"tableTask\"> </div>\r\n</div>\r\n</main>\r\n\r\n",
+      "parameters": {
+        "rows": [
+          [
+            {
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        ]
+      },
+      "_tab": "Files",
+      "files": {
+        "rows": []
+      }
+    },
+    "root": {
+      "id": "root",
+      "title": "root",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "1",
+        "4"
+      ],
+      "plugins": [
+        {
+          "type": "lab.plugins.Metadata"
+        }
+      ],
+      "metadata": {
+        "title": "Apartment-hunting task",
+        "description": "",
+        "repository": "",
+        "contributors": ""
+      },
+      "parameters": {
+        "rows": [
+          [
+            {
+              "name": "",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        ]
+      },
+      "files": {
+        "rows": []
+      }
+    }
+  },
+  "version": [
+    2018,
+    1,
+    2
+  ],
+  "files": {
+    "files": {
+      "index.html": {
+        "content": "data:text/html,%3C!doctype%20html%3E%0D%0A%3Chtml%3E%0D%0A%3Chead%3E%0D%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0D%0A%20%20%3Ctitle%3EExperiment%3C%2Ftitle%3E%0D%0A%20%20%3C!--%20lab.js%20library%20and%20default%20styles%20--%3E%0D%0A%20%20%3Cscript%20src%3D%22lib%2Flab.js%22%20data-labjs-script%3D%22library%22%3E%3C%2Fscript%3E%0D%0A%20%20%3Cscript%20src%3D%22lib%2Flab.fallback.js%22%20data-labjs-script%3D%22fallback%22%3E%3C%2Fscript%3E%0D%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22lib%2Flab.css%22%3E%0D%0A%20%20%3C!--%20study%20code%20and%20styles%20--%3E%0D%0A%20%20%3Cscript%20defer%20src%3D%22script.js%22%3E%3C%2Fscript%3E%0D%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22style.css%22%3E%0D%0A%3C%2Fhead%3E%0D%0A%3Cbody%3E%0D%0A%20%20%3C!--%20If%20you'd%20rather%20have%20a%20container%20with%20a%20fixed%20width%0D%0A%20%20%20%20%20%20%20and%20variable%20height%2C%20try%20removing%20the%20fullscreen%20class%20below%20--%3E%0D%0A%20%20%3Cdiv%20class%3D%22container%20fullscreen%22%20data-labjs-section%3D%22main%22%3E%0D%0A%20%20%20%20%3Cmain%20class%3D%22content-vertical-center%20content-horizontal-center%22%3E%0D%0A%20%20%20%20%20%20%3Cdiv%3E%0D%0A%20%20%20%20%20%20%20%20%3Ch2%3ELoading%20Experiment%3C%2Fh2%3E%0D%0A%20%20%20%20%20%20%20%20%3Cp%3EThe%20experiment%20is%20loading%20and%20should%20start%20in%20a%20few%20seconds%3C%2Fp%3E%0D%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0D%0A%20%20%20%20%3C%2Fmain%3E%0D%0A%20%20%3C%2Fdiv%3E%0D%0A%3C%2Fbody%3E%0D%0A%3C%2Fhtml%3E%0D%0A",
+        "source": "library"
+      },
+      "style.css": {
+        "content": "data:text/css,table%20%7Bmargin%3A%200%20auto%3B%7D%0D%0A%20%20%20%20.OptionsHeadings%0D%0A%09%7B%0D%0A%09%20%20%20%20width%3A%20160px%3B%0D%0A%09%20%20%20%20height%3A%2080px%3B%0D%0A%09%20%20%20%20font-weight%3A%20bold%3B%0D%0A%09%20%20%20%20text-align%3A%20center%3B%0D%0A%09%7D%0D%0A%09.OptionsHeadings%3Ahover%20%7B%0D%0A%20%20%09background-color%3A%20lemonchiffon%3B%0D%0A%09%09cursor%3A%20pointer%3B%0D%0A%09%7D%0D%0A%20%20%20%20.CuesHeadings%0D%0A%09%7B%0D%0A%09%20%20%20%20width%3A%20160px%3B%0D%0A%09%20%20%20%20height%3A%2080px%3B%0D%0A%09%20%20%20%20font-weight%3A%20bold%3B%0D%0A%09%20%20%20%20text-align%3A%20center%3B%0D%0A%09%7D%0D%0A%09.CellHolder%0D%0A%09%7B%0D%0A%09%09%09width%3A%20160px%3B%0D%0A%09%09%09height%3A%2080px%3B%0D%0A%09%20%20%20%20text-align%3A%20center%3B%0D%0A%09%7D%0D%0A%09.Cell%0D%0A%09%7B%0D%0A%09%20%20%20%20width%3A%20160px%3B%0D%0A%09%20%20%20%20height%3A%2080px%3B%0D%0A%09%20%20%20%20text-align%3A%20center%3B%0D%0A%09%20%20%20%20font-size%3A%2030px%3B%0D%0A%09%7D",
+        "source": "library"
+      }
+    },
+    "bundledFiles": {
+      "lib/lab.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.js.map": {
+        "type": "text/plain"
+      },
+      "lib/lab.css": {
+        "type": "text/css"
+      },
+      "lib/loading.svg": {
+        "type": "image/svg+xml"
+      },
+      "lib/lab.fallback.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js.map": {
+        "type": "text/plain"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # User Manual
 
-We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help them to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://lab.js.org) or as a task in [Open Lab](https://open-lab.online). There are two ways to work with the MAD builder. One option is to open the template (JSON file) in the lab.js builder, which is free open-source software. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. The second option is to open the MAD builder in Open Lab, an online platform for deployment of experiments. To modify the task, you have to edit its parameters (see *Table 1*). In the following, we will describe three different application scenarios to show how the parameters can be customized to your needs.
+We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help them to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://labjs.felixhenninger.com/) or as a task in [Open Lab](https://open-lab.online). There are two ways to work with the MAD builder. One option is to open the template (JSON file) in the lab.js builder, which is free open-source software. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. The second option is to open the MAD builder in Open Lab, an online platform for deployment of experiments. To modify the task, you have to edit its parameters (see *Table 1*). In the following, we will describe three different application scenarios to show how the parameters can be customized to your needs.
 
 ## Application scenarios
 
@@ -12,8 +12,6 @@ We assume that you know exactly how cues should look like in each trial, so you 
 Figure 1: The movie task
 
 ![The movie task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png)
-
-
 
 ### Scenario 2: “Closed Mouselab with randomization”
 
@@ -28,10 +26,11 @@ Figure 2: Apartment-hunting task
 The flexibility of the MAD Builder arises from the capability to upload your own images and use them as options, cues or cue values. In this case, we consider the task in which we ask people to choose between two food products. The first cue is the amount of calories (numbers), the second is the price ($), and the third cue is the country of origin (images of flags). Since it is a preferential choice, we will not estimate how correct the answer is and will not give participants any feedback.
 In the lab.js experiment builder we need to upload images that will represent food products. Upload images on the screen component “MouseLab” and rename them to correspond to the values of the parameter *_ displayOptionsNames*.
 
+
+
 Figure 3: Food preferences task
 
 ![The preference task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%203.png)
-
 
 Table 1. The parameters
 
