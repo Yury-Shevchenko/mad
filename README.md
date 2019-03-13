@@ -1,6 +1,6 @@
 # User Manual
 
-We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help them to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://labjs.felixhenninger.com/) or as a task in [Open Lab](https://open-lab.online). There are two ways to work with the MAD builder. One option is to open the template (JSON file) in the lab.js builder, which is free open-source software. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. The second option is to open the MAD builder in Open Lab, an online platform for deployment of experiments. To modify the task, you have to edit its parameters (see *Table 1*). In the following, we will describe three different application scenarios to show how the parameters can be customized to your needs.
+We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help them to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://labjs.felixhenninger.com/) or as a task in [Open Lab](https://open-lab.online). There are two ways to work with the MAD builder. One option is to open the template (JSON file) in the lab.js builder, which is free open-source software. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. The second option is to open the MAD builder in Open Lab, an online platform for deployment of experiments. To modify the task, you have to edit its parameters (see [Table 1](https://github.com/Yury-Shevchenko/mad#table-1-task-parameters)). In the following, we will describe three different application scenarios to show how the parameters can be customized to your needs.
 
 ## Application scenarios
 
@@ -9,6 +9,8 @@ We have created the **Multi-Attribute Decision (MAD) builder** for researchers t
 In the first example, we consider the choice between two movies (“movie A” and “movie B”) based on the opinions of four experts who can either recommend a movie (+) or give no recommendation (-). Let's say we need 5 trials with feedback for 2 seconds after each trial telling participants whether they are correct or wrong.
 We assume that you know exactly how cues should look like in each trial, so you don't require randomization, but wish to present the task in the order you defined from the start.
 
+[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json "Movie task")
+
 Figure 1: The movie task
 
 ![The movie task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png)
@@ -16,6 +18,8 @@ Figure 1: The movie task
 ### Scenario 2: “Closed Mouselab with randomization”
 
 The second application scenario includes more randomization and applies the Mouselab paradigm in which users have to click on the boxes to open information. This time, it's about choosing between four different apartments based on five different cues. The cue values are generated independently with a probability of 40% to be a positive one. The feedback and the number of points are also displayed to participants. The participants click on the boxes to open the information and this information remains open until the end of the trial. We also make the information search costly and charge a certain number of points for each opened box. The options and cues are kept in the same order across trials.
+
+[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%202%20Apartment-hunting%20task.json "Apartment-hunting task")
 
 Figure 2: Apartment-hunting task
 
@@ -27,7 +31,6 @@ The flexibility of the MAD Builder arises from the capability to upload your own
 In the lab.js experiment builder we need to upload images that will represent food products. Upload images on the screen component “MouseLab” and rename them to correspond to the values of the parameter *_displayOptionsNames*.
 
 [Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json "Movie task")
-<a href="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json" download target="\_blank">Click to Download</a>
 
 Figure 3: Food preferences task
 
