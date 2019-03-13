@@ -27,7 +27,7 @@ The flexibility of the MAD Builder arises from the capability to upload your own
 In the lab.js experiment builder we need to upload images that will represent food products. Upload images on the screen component “MouseLab” and rename them to correspond to the values of the parameter *_displayOptionsNames*.
 
 [Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json "Movie task")
-<a href="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json" download>Click to Download</a>
+<a href="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json" download target="\_blank">Click to Download</a>
 
 Figure 3: Food preferences task
 
