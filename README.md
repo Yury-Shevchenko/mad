@@ -36,6 +36,33 @@ Figure 3: Food preferences task
 
 ![The preference task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%203.png)
 
+### Scenario 4: “Custom display”
+
+The tabular format has been prevailing in the examples mentioned above. However, researchers might ask participants to make choices in other formats, e.g., in a more ecologically valid design. In this example, we consider the task where a participant chooses between two apartments, and the cues are positioned around each option. The participants have to click on cues to see them.
+To customize the display, we need first to set the parameter *_customDisplay* to true. Then, we have to work with the “Content” of the screen, where we create both options and cues elements. For each of the options that participants can click to make a decision, we need to define an `id` that corresponds to the internal name of the option. The id can be set for any HTML element, giving you freedom to decide what the element should look like: it can be a text, an image, or a field.
+
+```javascript
+<div id = “Option1”>
+  Your text
+</div>
+```
+
+To display cues, you should create two divs: a wrapper and an inner one. For the wrapper, set the `id` with the following pattern: “the internal name of the option” – “the internal name of the cue”. The second div, an inner one, should be inside the wrapper. Within this inner div, you can place any elements, which will be displayed on click (if the paradigm is the closed Mouselab). For example:
+
+```javascript
+<div id = “Option1-Cue1”>
+  <div>
+    Your text
+  </div>
+</div>
+```
+
+[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%204%20Bicycle%20task.json "Bicycle task")
+
+Figure 4: The bicycle task
+
+![The preference task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%204.png)
+
 #### Table 1. Task parameters
 
 | Parameter name                       | Example                                         | Format                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -72,3 +99,48 @@ Figure 3: Food preferences task
 | _showOptionsAsImages                 | TRUE                                            | true / false                                                                                                                          | Whether or not to show options as images. If true, display names will be used as images names.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | _showCuesAsImages                    | FALSE                                           | true / false                                                                                                                          | Whether or not to show cues as images. If true, cues names will be used as images names.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | _typeOfCues                          | binary                                          | binary / raw / image / name / any                                                                                                     | How to display cues: Binary:  *+* or *-*. If the cue is of *binary* type, the value bigger than zero is displayed as a plus sign, otherwise as a minus sign. Raw: the way how values are written in the parameter *_cueValuesForEachTrial*.  Image: as images for positive and negative values. The value bigger than zero is displayed as an image with the name from *_imageNamePositive*, otherwise as an image with the name from *_imageNameNegative*. Name: as images. The names of the images are in the parameter *_displayOptions*. Any: as images. The names of the images are in the parameter *_displayOptions*. If there is no image with the specified name, the raw value of cue is shown. |
+
+## Working with data
+
+The results are saved in the csv format divided by comma, so you can open the file in your favorite program (Excel, SPSS, R, etc.). Inside of the file, some of the columns are default data columns supplied by lab.js:  sender, sender_type, sender_id, timestamp, meta, ended_on, response, time_commit, time_end, time_render, time_run, time_show, and time_switch. Please consult with lab.js documentation for descriptions [here ](https://labjs.readthedocs.io/en/latest/reference/data%20format.html).
+
+The other variable record participants’ behavior and parameters that were used to construct each trial:
+
+-	`answer`: chosen answer in terms of the displayed name
+-	`answerOption`: chosen answer in terms of the internally used name
+-	`boxHistory`: the array with the numbers of opened boxes. All boxed are numbered from left to right, from top to bottom, e.g. [“1”,”2”,”3”,”4”].
+-	`calculatedValuesOfOptions`: the array of calculated values for each option. The option with the highest value is a correct option in the trial. Ties are broken randomly.
+-	`correctOption: correct answer in terms of the displayed name
+-	`cueCost`: cost of opening one information box
+-	`cuesHistory`: the array with information about opened information boxes. Each box is presented by contains the name of the option, displayed name of the option and the cue name, e.g. ["Option1-Apartment 1-Size","Option2-Apartment 2-Size","Option3-Apartment 3-Size","Option4-Apartment 4-Size"].
+-	`cuesNum`: number of the cues in the trial
+-	`cuesOrder`: order of the cues in the trial
+-	`cuesReaction`: whether information boxes remain open or close after the mouse pointer leaves the box (applied only to the closed Mouselab paradigm).
+-	`cuesType`: type of the cues (name, binary, raw, image, name, or any)
+-	`cuesValuesHistory`: the array with the shown values of opened information boxes, e.g. ["-","-","+","-"]
+-	`currentTrial`: the current trial number
+-	`displayCuesNames`: the displayed names of the cues in the trial
+-	`displayOptions`: the information about the options presented from left to right. Each option contains the option number, the internally used option name, the display name, the array of cue values, the calculated option value.
+-	`duration`: the time length of the trial.		
+-	`feedback`: whether feedback was shown in the trial
+-	`firstCueValue`: the first cue value shown to the participant (if it was specified in the task parameters)
+-	`infoCost`: cost of opening one information box in the trial
+-	`instruction:` the instruction text in the trial
+-	`loseCost`: cost of losing in the trial
+-	`numberOfOpenedCues`: the number of opened information boxed (applied only to the closed Mouselab paradigm).
+-	`openCues`: the number of opened cues from the beginning of the trial (if it was specified in the task parameters)		
+-	`optionsNum`: the number of options in the trial
+-	`paradigm`: the open or closed Mouselab paradigm
+-	`payneIndex`: the Payne information search index (for closed Mouselab paradigm)
+-	`points`: the number of points at the end of the trial
+-	`positionOfWinOption`: the displayed position of the correct option in the trial (counter from left to right)
+-	`showCuesAsImages`: the way cues presented in the trial
+-	`showOptionsAsImages`:	the way options presented in the trial
+-	`showPoints`: whether to show points in the trial
+-	`startBalance`: the starting amount of points for the trials
+-	`theValueOfWinOption`: the calculated value of the correct option in the trial
+-	`timeCueHistory`: The array with the times spent on each opened box (between opening a cue and leaving the box with the cue)
+-	`timeForFeedback`: the time length of the shown feedback in the trial		
+-	`trialNumber`: the original trial’s number (in case if the order of trials is randomized)
+-	`trialTime`: the time between presentation of the task board and the click on a choice
+-	`winCost`: prize of winning in this trial
