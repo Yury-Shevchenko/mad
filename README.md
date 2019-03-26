@@ -30,7 +30,7 @@ Figure 2: Apartment-hunting task
 The flexibility of the MAD Builder arises from the capability to upload your own images and use them as options, cues or cue values. In this case, we consider the task in which we ask people to choose between two food products. The first cue is the amount of calories (numbers), the second is the price ($), and the third cue is the country of origin (images of flags). Since it is a preferential choice, we will not estimate how correct the answer is and will not give participants any feedback.
 In the lab.js experiment builder we need to upload images that will represent food products. Upload images on the screen component “MouseLab” and rename them to correspond to the values of the parameter *_displayOptionsNames*.
 
-[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%201%20Movie%20task.json "Movie task")
+[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%203%20The%20preferential%20choice%20with%20images.json)
 
 Figure 3: Food preferences task
 
@@ -38,7 +38,7 @@ Figure 3: Food preferences task
 
 ### Scenario 4: “Custom display”
 
-The tabular format has been prevailing in the examples mentioned above. However, researchers might ask participants to make choices in other formats, e.g., in a more ecologically valid design. In this example, we consider the task where a participant chooses between two apartments, and the cues are positioned around each option. The participants have to click on cues to see them.
+The previous examples have demonstrated the tabular format of the task. However, researchers might ask participants to make choices in other contexts, e.g., in a more ecologically valid design. In this example, we consider the task where a participant can examine cues that are positioned on a bicycle. The participants have to click on cues to see them.
 To customize the display, we need first to set the parameter *_customDisplay* to true. Then, we have to work with the “Content” of the screen, where we create both options and cues elements. For each of the options that participants can click to make a decision, we need to define an `id` that corresponds to the internal name of the option. The id can be set for any HTML element, giving you freedom to decide what the element should look like: it can be a text, an image, or a field.
 
 ```javascript
@@ -47,7 +47,7 @@ To customize the display, we need first to set the parameter *_customDisplay* to
 </div>
 ```
 
-To display cues, you should create two divs: a wrapper and an inner one. For the wrapper, set the `id` with the following pattern: “the internal name of the option” – “the internal name of the cue”. The second div, an inner one, should be inside the wrapper. Within this inner div, you can place any elements, which will be displayed on click (if the paradigm is the closed Mouselab). For example:
+To display cues, you should create two divs: a wrapper and an inner one. For the wrapper, set the `id` with the following pattern: *“option name”* – *“cue name”*. The second inner div should be inside the wrapper. Within this inner div, you can place any elements, which will be displayed on click (if the paradigm is the closed Mouselab). For example:
 
 ```javascript
 <div id = “Option1-Cue1”>

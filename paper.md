@@ -13,6 +13,7 @@ affiliations:
 index: 1
 date: 26 March 2019
 bibliography: paper.bib
+csl: chicago-note-bibliography-with-ibid.csl
 ---
 
 # Summary
@@ -23,7 +24,7 @@ Figure 1: The movie task
 
 ![The movie task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png)
 
-The multi-attribute decision paradigm in a tabular format was described as "Mouselab" in the book by Payne, Bettman and Johnson "The adaptive decision maker" [@Payne]. Since then, it has been a popular approach for investigating decision processes. Following the general guidelines, researchers developed their own laboratory versions of Mouselab tailored to their needs [@Jasper, @Reisen]. Nevertheless, due to differences in software and programming languages, it was difficult to share tasks within the research community.
+The multi-attribute decision paradigm in a tabular format was described as "Mouselab" in the book by Payne, Bettman and Johnson "The adaptive decision maker" [@Payne]. Since then, it has been a popular approach for investigating decision processes. Following the general guidelines, researchers developed their own laboratory versions of Mouselab tailored to their needs [@Jasper2002, @Reisen]. Nevertheless, due to differences in software and programming languages, it was difficult to share tasks within the research community.
 
 Willemsen and Johnson developed MouselabWEB as an online version of Mouselab [@Willemsen]. MouselabWEB supports HTML and JavaScript and has been available online for many years since its release [@Goldstein]. However, there is a clear need for modern applications that help researchers design and publish their own Mouselab tasks online with greater flexibility and usability.
 
