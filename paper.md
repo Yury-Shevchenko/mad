@@ -12,8 +12,7 @@ affiliations:
   -	name: University of Mannheim, Germany
 index: 1
 date: 26 March 2019
-bibliography: paper.bib
-csl: biomed-central.csl
+bibliography: bibliography.bib
 ---
 
 # Summary
