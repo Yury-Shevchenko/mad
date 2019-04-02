@@ -8,7 +8,7 @@ We have created the **Multi-Attribute Decision (MAD) builder** for researchers t
 
 In the first example, we will demonstrate the task with predefined cue values that are shown to a participants from the beginning of a trial.
 We will consider the choice between two movies (“Movie A” and “Movie B”) based on the opinions of four experts who can either recommend a movie (+) or give no recommendation (-). Let's say we need 5 trials with feedback for 2 seconds after each trial telling participants whether they are correct or wrong.
-We assume that a researchers knows exactly which cues should be shown in each trial and specify them inside of the parameter *__cueValuesForEachTrial*.
+We assume that a researcher knows exactly which cues should be shown in each trial and specifies them inside of the parameter *__cueValuesForEachTrial*.
 
 [Open the example in the lab.js builder](https://labjs.felixhenninger.com/?url=https://open-lab.online/labjs/5ca360f38ef62535954f9c4f "Sneak preview")
 
@@ -18,11 +18,13 @@ Figure 1: The movie task
 
 ![The movie task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png)
 
-### Scenario 2: “Closed Mouselab with randomization”
+### Scenario 2: “Apartment Hunting”
 
-The second application scenario includes more randomization and applies the Mouselab paradigm in which users have to click on the boxes to open information. This time, it's about choosing between four different apartments based on five different cues. The cue values are generated independently with a probability of 40% to be a positive one. The feedback and the number of points are also displayed to participants. The participants click on the boxes to open the information and this information remains open until the end of the trial. We also make the information search costly and charge a certain number of points for each opened box. The options and cues are kept in the same order across trials.
+The second application scenario will show randomization options and the closed Mouselab paradigm in which users have to click on the boxes to open information. This time, the task is about choosing between four different apartments based on five different cues. The cue values are generated independently with a probability of 40% to be a positive one. The feedback and the number of points are also displayed to participants. The participants click on the boxes to open the information and this information remains open until the end of the trial. We also make the information search costly and charge a certain number of points for each opened box. The options and cues are kept in the same order across trials.
 
-[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%202%20Apartment-hunting%20task.json "Apartment-hunting task")
+[Open the example in the lab.js builder](https://labjs.felixhenninger.com/?url=https://open-lab.online/labjs/5ca3648b8ef62535954f9c50 "Apartment Hunting")
+
+[Open the example in Open Lab](https://open-lab.online/tests/test/apartment-hunting "Apartment Hunting")
 
 Figure 2: Apartment-hunting task
 
