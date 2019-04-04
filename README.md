@@ -16,7 +16,7 @@ We assume that a researcher knows exactly which cues should be shown in each tri
 
 Figure 1: The movie task
 
-<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png" width="200">
+<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png" width="400">
 
 
 ### Scenario 2: “Apartment Hunting”
@@ -29,7 +29,7 @@ The second application scenario will show randomization options and the closed M
 
 Figure 2: Apartment-hunting task
 
-![The apartment task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%202.png)
+<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%202.png" width="400">
 
 ### Scenario 3: “Culinary Delights”
 
