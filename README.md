@@ -30,12 +30,14 @@ Figure 2: Apartment-hunting task
 
 ![The apartment task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%202.png)
 
-### Scenario 3: “The preferential choice with images”
+### Scenario 3: “Culinary Delights”
 
-The flexibility of the MAD Builder arises from the capability to upload your own images and use them as options, cues or cue values. In this case, we consider the task in which we ask people to choose between two food products. The first cue is the amount of calories (numbers), the second is the price ($), and the third cue is the country of origin (images of flags). Since it is a preferential choice, we will not estimate how correct the answer is and will not give participants any feedback.
-In the lab.js experiment builder we need to upload images that will represent food products. Upload images on the screen component “MouseLab” and rename them to correspond to the values of the parameter *_displayOptionsNames*.
+The flexibility of the MAD Builder arises from the capability to upload your own images and use them as options, cues or cue values. In this case, we consider the task in which we ask people to choose between two food products. The first cue is the amount of calories (in numbers), the second is the price (in $), and the third cue is the country of origin (shown as images of flags). Since it is a preferential choice, we will not estimate how correct the answer is and will not give participants any feedback.
+In the lab.js experiment builder, the images can be uploaded in the component “Screen” and renamed to correspond to the values of the parameter *_displayOptionsNames*. The example already includes the images.
 
-[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%203%20The%20preferential%20choice%20with%20images.json)
+[Open the example in the lab.js builder](https://labjs.felixhenninger.com/?url=https://open-lab.online/labjs/5ca369518ef62535954f9c53 "Culinary Delights")
+
+[Open the example in Open Lab](https://open-lab.online/tests/test/apartment-hunting "Culinary Delights")
 
 Figure 3: Food preferences task
 
@@ -43,8 +45,8 @@ Figure 3: Food preferences task
 
 ### Scenario 4: “Custom display”
 
-The previous examples have demonstrated the tabular format of the task. However, researchers might ask participants to make choices in other contexts, e.g., in a more ecologically valid design. In this example, we consider the task where a participant can examine cues that are positioned on a bicycle. The participants have to click on cues to see them.
-To customize the display, we need first to set the parameter *_customDisplay* to true. Then, we have to work with the “Content” of the screen, where we create both options and cues elements. For each of the options that participants can click to make a decision, we need to define an `id` that corresponds to the internal name of the option. The id can be set for any HTML element, giving you freedom to decide what the element should look like: it can be a text, an image, or a field.
+The previous examples have demonstrated the tabular format of the task. However, researchers might be interested in analyzing behavior in more natural contexts, in which the information is embedded into the environment. In this example, we consider the task where a participant can choose between different types of bicycles. The participants can see the information about the options by clicking of designating areas around the bicycles (see Figure 4).
+To customize the display, we need to set the parameter *_customDisplay* to true. Then, we have to work with the “Content” of the screen, where we create both options and cues elements. For each of the options that participants can click to make a decision (i.e., "Choose" buttons), we need to define an `id` that corresponds to the internal name of the option. The id can be set for any HTML element, giving you freedom to decide what the element should look like: it can be a text, an image, or a field.
 
 ```javascript
 <div id = “Option1”>
@@ -62,7 +64,9 @@ To display cues, you should create two divs: a wrapper and an inner one. For the
 </div>
 ```
 
-[Download JSON script](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/scripts/Case%204%20Bicycle%20task.json "Bicycle task")
+[Open the example in the lab.js builder](https://labjs.felixhenninger.com/?url=https://open-lab.online/labjs/5ca5e3cf16d8f9637742dc39 "Radler task")
+
+[Open the example in Open Lab](https://open-lab.online/tests/test/radler-task "Radler task")
 
 Figure 4: The bicycle task
 
