@@ -37,7 +37,7 @@ In the lab.js experiment builder, the images can be uploaded in the component â€
 
 [Open the example in the lab.js builder](https://labjs.felixhenninger.com/?url=https://open-lab.online/labjs/5ca369518ef62535954f9c53 "Culinary Delights")
 
-[Open the example in Open Lab](https://open-lab.online/tests/test/apartment-hunting "Culinary Delights")
+[Open the example in Open Lab](https://open-lab.online/tests/test/culinary-delights "Culinary Delights")
 
 Figure 3: Food preferences task
 
