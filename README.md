@@ -16,7 +16,8 @@ We assume that a researcher knows exactly which cues should be shown in each tri
 
 Figure 1: The movie task
 
-![The movie task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png )
+<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png" width="200">
+
 
 ### Scenario 2: “Apartment Hunting”
 
