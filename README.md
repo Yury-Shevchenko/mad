@@ -16,7 +16,7 @@ We assume that a researcher knows exactly which cues should be shown in each tri
 
 Figure 1: The movie task
 
-<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png" width="500">
+<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%201.png" width="600">
 
 
 ### Scenario 2: “Apartment Hunting”
@@ -29,7 +29,7 @@ The second application scenario will show randomization options and the closed M
 
 Figure 2: Apartment-hunting task
 
-<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%202.png" width="500">
+<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%202.png" width="600">
 
 ### Scenario 3: “Culinary Delights”
 
@@ -42,7 +42,7 @@ In the lab.js experiment builder, the images can be uploaded in the component �
 
 Figure 3: Food preferences task
 
-<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%203.png" width="500">
+<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%203.png" width="600">
 
 
 ### Scenario 4: “Custom display”
@@ -72,7 +72,7 @@ To display cues, you should create two divs: a wrapper and an inner one. For the
 
 Figure 4: The bicycle task
 
-<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%204.png" width="800">
+<img src="https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%204.png" width="1000">
 
 #### Table 1. Task parameters
 
