@@ -7,7 +7,7 @@ We have created the **Multi-Attribute Decision (MAD) builder** for researchers t
 ### Scenario 1: "Sneak Preview"
 
 In the first example, we will demonstrate the task with predefined cue values that are shown to a participants from the beginning of a trial.
-We will consider the choice between two movies (“Movie A” and “Movie B”) based on the opinions of four experts who can either recommend a movie (+) or give no recommendation (-). Let's say we need 5 trials with feedback for 2 seconds after each trial telling participants whether they are correct or wrong.
+We will consider the choice between two movies (“Movie 1” and “Movie 2”) based on the opinions of four experts who can either recommend a movie (+) or give no recommendation (-). Let's say we need 5 trials with feedback for 2 seconds after each trial telling participants whether they are correct or wrong.
 We assume that a researcher knows exactly which cues should be shown in each trial and specifies them inside of the parameter *__cueValuesForEachTrial*.
 
 [Open the example in the lab.js builder](https://labjs.felixhenninger.com/?url=https://open-lab.online/labjs/5ca360f38ef62535954f9c4f "Sneak preview")
