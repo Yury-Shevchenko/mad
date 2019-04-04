@@ -35,7 +35,7 @@ The tabular format of the multi-attribute decision task has prevailed in previou
 
 The presentation of information in tables, however, limits the scope of research questions to the analysis of how people deal with structured information. Researchers may be interested in learning how people behave in other contexts that employ a more ecologically valid design in which information about cues is scattered. New research questions can be answered in this case, such as how people organize available information [@Ettlin2015]. The MAD builder allows the user to fully customize the display of options and cues by positioning them in any place on the screen. In this way, participants can interact with images of objects and examine their attributes and values by clicking on them (see Figure 2).
 
-Figure 2: An example of the task with cues embedded into the image. The cue values can be examined by clicking on them. Photo by [Mikkel Bech](https://unsplash.com/photos/yjAFnkLtKY0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/bicycle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+Figure 2: An example of the task with cues embedded into the image. The cue values can be examined by clicking on them. 
 
 ![The bicycle task](https://raw.githubusercontent.com/Yury-Shevchenko/mad/master/images/Example%204.png)
 
