@@ -1,17 +1,22 @@
 ---
 title: 'Multi-attribute task builder'
+
 tags:
-  -	multi-attribute decision task
-  -	online experiment
-  -	JavaScript
+- multi-attribute decision task
+- online experiment
+- JavaScript
+
 authors:
-  - name: Yury Shevchenko
-    orcid: 0000-0002-3397-8465
-    affiliation: 1
+- name: Yury Shevchenko
+  orcid: 0000-0002-3397-8465
+  affiliation: 1
+
 affiliations:
-  - name: University of Mannheim, Germany
-    index: 1
+- name: University of Mannheim, Germany
+  index: 1
+
 date: 26 March 2019
+
 bibliography: paper.bib
 ---
 
