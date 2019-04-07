@@ -11,7 +11,6 @@ authors:
 affiliations:
   - name: University of Mannheim, Germany
     index: 1
-index: 1
 date: 26 March 2019
 bibliography: paper.bib
 ---
