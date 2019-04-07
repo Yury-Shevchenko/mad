@@ -1,5 +1,5 @@
 ---
-title: Multi-attribute task builder
+title: 'Multi-attribute task builder'
 tags:
   -	multi-attribute decision task
   -	online experiment
