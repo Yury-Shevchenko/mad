@@ -2,14 +2,14 @@
 
 We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://labjs.felixhenninger.com/) or as a complete task in [Open Lab](https://open-lab.online). There are two ways to work with the builder. One option is to open the task in Open Lab, a platform for deployment of online experiments. The second option is to open the template (as a JSON file) in the lab.js builder, which is free open-source software for building online experiments. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. To modify the task in lab.js or in Open Lab, you have to edit its parameters (see [Table 1](https://github.com/Yury-Shevchenko/mad#table-1-task-parameters)). In the following, we will show how to open the template in Open Lab and lab.js. Then, we will describe four different application scenarios to demonstrate how the parameters can be customized to your needs.
 
-#### Openning the task in Open Lab
+#### Opening the task in Open Lab
 
 When you follow the link to the task in Open Lab, you will be redirected to the Open Lab repository of online experiments. In case you are not registered in Open Lab yet, you will be asked to do so in order to work with the task. Registering as a researcher is simple and requires only an email address and a password. After registration, you will be able to run the task.
 
 If you want to use the task in your project or edit task parameters, first create a project and then add the task to your project. The documentation with the necessary steps is [here](https://open-lab.online/docs/project).
 
 
-#### Openning the task in lab.js
+#### Opening the task in lab.js
 
 If you need further task customization (e.g. editing CSS styles), you can change the task in lab.js. Please, check the [documentation](https://labjs.readthedocs.io) to familiarize yourself with lab.js.
 
