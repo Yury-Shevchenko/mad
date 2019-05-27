@@ -1,6 +1,24 @@
 # User Manual
 
-We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://labjs.felixhenninger.com/) or as a complete task in [Open Lab](https://open-lab.online). There are two ways to work with the builder. One option is to open the template (as a JSON file) in the lab.js builder, which is free open-source software. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. The second option is to open the task in Open Lab, an online platform for deployment of experiments. To modify the task in lab.js or in Open Lab, you have to edit its parameters (see [Table 1](https://github.com/Yury-Shevchenko/mad#table-1-task-parameters)). In the following, we will describe four different application scenarios to show how the parameters can be customized to your needs.
+We have created the **Multi-Attribute Decision (MAD) builder** for researchers to help to design a Mouselab task in a browser-based experiment. The MAD builder is available as either a template in the [lab.js](https://labjs.felixhenninger.com/) or as a complete task in [Open Lab](https://open-lab.online). There are two ways to work with the builder. One option is to open the task in Open Lab, a platform for deployment of online experiments. The second option is to open the template (as a JSON file) in the lab.js builder, which is free open-source software for building online experiments. Working in lab.js offers flexibility, as you can change not only the parameters, but also the design of your study. To modify the task in lab.js or in Open Lab, you have to edit its parameters (see [Table 1](https://github.com/Yury-Shevchenko/mad#table-1-task-parameters)). In the following, we will show how to open the template in Open Lab and lab.js. Then, we will describe four different application scenarios to demonstrate how the parameters can be customized to your needs.
+
+#### Openning the task in Open Lab
+
+When you follow the link to the task in Open Lab, you will be redirected to the Open Lab repository of online experiments. In case you are not registered in Open Lab yet, you will be asked to do so in order to work with the task. Registering as a researcher is simple and requires only an email address and a password. After registration, you will be able to run the task.
+
+If you want to use the task in your project or edit task parameters, first create a project and then add the task to your project. The documentation with the necessary steps is [here](https://open-lab.online/docs/project).
+
+
+#### Openning the task in lab.js
+
+If you need further task customization (e.g. editing CSS styles), you can change the task in lab.js. Please, check the [documentation](https://labjs.readthedocs.io) to familiarize yourself with lab.js.
+
+You can open the examples below by clicking on them. On the lab.js builder page, you should see a pop-up dialogue such as "Would you like to load the study from ... ?"
+If you do not see the message, dialogues may be blocked in your browser. Then, you can turn blockers off or try another browser.
+
+Alternatively, if you have saved the file with the task on your computer, you can open the lab.js builder page, proceed to the main menu on the left (with a downward-pointing arrow), and select the Study/Open. Now, you can pick a JSON file from your local directory and open it in the builder.  
+
+The task consists of four nested components. The main component "Multi-attribute decision" is a sequence that contains the task parameters. Inside is the loop that takes care of repeating trials. Everything within the loop is repeated in each trial. The sequence inside of the loop allows to repeat a sequence of screens. At the current moment, there is only a trial screen, but you can add more screens if you like. The trial screen contains the task content ( tab `Content`) and logic (tab `Scripts`). Feel free to explore the code or change the appearance of the task.
 
 ## Application scenarios
 
@@ -121,7 +139,7 @@ The other variable record participants’ behavior and parameters that were used
 -	`answerOption`: chosen answer in terms of the internally used name
 -	`boxHistory`: the array with the numbers of opened boxes. All boxed are numbered from left to right, from top to bottom, e.g. [“1”,”2”,”3”,”4”].
 -	`calculatedValuesOfOptions`: the array of calculated values for each option. The option with the highest value is a correct option in the trial. Ties are broken randomly.
--	`correctOption: correct answer in terms of the displayed name
+-	`correctOption`: correct answer in terms of the displayed name
 -	`cueCost`: cost of opening one information box
 -	`cuesHistory`: the array with information about opened information boxes. Each box is presented by contains the name of the option, displayed name of the option and the cue name, e.g. ["Option1-Apartment 1-Size","Option2-Apartment 2-Size","Option3-Apartment 3-Size","Option4-Apartment 4-Size"].
 -	`cuesNum`: number of the cues in the trial
@@ -155,3 +173,11 @@ The other variable record participants’ behavior and parameters that were used
 -	`trialNumber`: the original trial’s number (in case if the order of trials is randomized)
 -	`trialTime`: the time between presentation of the task board and the click on a choice
 -	`winCost`: prize of winning in this trial
+
+## Contribute to the software
+
+Thank you for considering to contribute to the development of the multi-attribute decision builder! You can submit an issue or a bug report via [GitHub](https://github.com/Yury-Shevchenko/mad/issues/new). If you want to contribute to the code development, submit a pull request or get in touch with us via [Slack chat](https://join.slack.com/t/open-lab-online/shared_invite/enQtNDU3MzgzMzY4NDcxLTBjZTg1NmViYTEwYWI0NmE3MDZmM2QwMzNhZmRmNmZkMDRhMzhlNTZlZWU2OWU0MmU5YTBhMjU4MWFlYjcwYjA). You can also share your tasks in Open Lab, read more about uploading a task [here](https://github.com/Yury-Shevchenko/mad/compare).
+
+## Support
+
+If you have problems with the multi-attribute decision builder and seek support, please feel free to join our [Slack chat](https://join.slack.com/t/open-lab-online/shared_invite/enQtNDU3MzgzMzY4NDcxLTBjZTg1NmViYTEwYWI0NmE3MDZmM2QwMzNhZmRmNmZkMDRhMzhlNTZlZWU2OWU0MmU5YTBhMjU4MWFlYjcwYjA) that is dedicated to Open Lab.
