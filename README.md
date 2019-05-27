@@ -176,7 +176,7 @@ The other variable record participants’ behavior and parameters that were used
 
 ## Contribute to the software
 
-Thank you for considering to contribute to the development of the multi-attribute decision builder! You can submit an issue or a bug report via [GitHub](https://github.com/Yury-Shevchenko/mad/issues/new). If you want to contribute to the code development, submit a pull request or get in touch with us via [Slack chat](https://join.slack.com/t/open-lab-online/shared_invite/enQtNDU3MzgzMzY4NDcxLTBjZTg1NmViYTEwYWI0NmE3MDZmM2QwMzNhZmRmNmZkMDRhMzhlNTZlZWU2OWU0MmU5YTBhMjU4MWFlYjcwYjA). You can also share your tasks in Open Lab, read more about uploading a task [here](https://github.com/Yury-Shevchenko/mad/compare).
+Thank you for considering to contribute to the development of the multi-attribute decision builder! You can submit an issue or a bug report via [GitHub](https://github.com/Yury-Shevchenko/mad/issues/new). If you want to contribute to the code development, submit a pull request or get in touch with us via [Slack chat](https://join.slack.com/t/open-lab-online/shared_invite/enQtNDU3MzgzMzY4NDcxLTBjZTg1NmViYTEwYWI0NmE3MDZmM2QwMzNhZmRmNmZkMDRhMzhlNTZlZWU2OWU0MmU5YTBhMjU4MWFlYjcwYjA). You can also share your tasks in Open Lab, read more about uploading a task [here](https://open-lab.online/docs/upload).
 
 ## Support
 
